@@ -1,20 +1,9 @@
--- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
---
--- Host: 127.0.0.1
--- Generation Time: Feb 29, 2016 at 10:27 AM
--- Server version: 10.1.9-MariaDB
--- PHP Version: 5.6.15
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `gymdb`
@@ -24,9 +13,7 @@ SET time_zone = "+00:00";
 
 --
 -- Table structure for table `login`
---
--- Creation: Feb 22, 2016 at 02:37 PM
---
+
 
 CREATE TABLE `login` (
   `name` varchar(30) NOT NULL,
@@ -45,9 +32,7 @@ INSERT INTO `login` (`name`, `pword`) VALUES
 
 --
 -- Table structure for table `memberdetails`
---
--- Creation: Feb 22, 2016 at 06:05 PM
---
+
 
 CREATE TABLE `memberdetails` (
   `id` int(10) NOT NULL,
@@ -77,9 +62,7 @@ INSERT INTO `memberdetails` (`id`, `name`, `contact_number`, `address`, `registe
 
 --
 -- Table structure for table `morememberdetails`
---
--- Creation: Feb 22, 2016 at 08:07 PM
---
+
 
 CREATE TABLE `morememberdetails` (
   `id` int(20) NOT NULL,
@@ -118,8 +101,7 @@ INSERT INTO `morememberdetails` (`id`, `nic`, `email`, `emcontact`, `gender`, `h
 --
 -- Table structure for table `pay`
 --
--- Creation: Feb 24, 2016 at 09:42 AM
---
+
 
 CREATE TABLE `pay` (
   `id` int(10) NOT NULL,
@@ -143,8 +125,7 @@ INSERT INTO `pay` (`id`, `count`, `reciptNo`, `payment`, `date`, `added_by`) VAL
 --
 -- Table structure for table `pictures`
 --
--- Creation: Feb 22, 2016 at 07:34 PM
---
+
 
 CREATE TABLE `pictures` (
   `id` int(11) NOT NULL,
